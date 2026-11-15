@@ -558,9 +558,36 @@
       letter-spacing: 0.5em;
       padding: 1rem 0;
     }
+
+    /* ══════════ NAV ══════════ */
+    .site-nav { position: sticky; top: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0.8rem 2rem; background: rgba(26,5,0,0.95); border-bottom: 1px solid rgba(212,160,23,0.2); backdrop-filter: blur(8px); gap: 1rem; }
+    .nav-brand { font-family: 'Cinzel', serif; font-size: 1.1rem; font-weight: 700; color: var(--gold); text-decoration: none; white-space: nowrap; }
+    .nav-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .nav-links a { font-family: 'Cinzel', serif; font-size: 0.8rem; letter-spacing: 0.05em; color: var(--parchment); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+    .nav-subscribe { font-family: 'Cinzel', serif; font-size: 0.8rem; font-weight: 600; padding: 0.45rem 1.1rem; border-radius: 4px; white-space: nowrap; background: linear-gradient(135deg, var(--saffron), #C8470A); color: #fff; text-decoration: none; }
+    @media (max-width: 768px) { .nav-links { display: none; } .site-nav { padding: 0.7rem 1rem; } }
+
+    /* ══════════ SERIES BROWSE ══════════ */
+    .series-browse { display:flex; flex-wrap:wrap; gap:0.8rem; justify-content:center; margin:2rem 0; }
+    .series-btn { padding:0.6rem 1.4rem; border-radius:50px; text-decoration:none; font-family:'Cinzel',serif; font-size:0.85rem; font-weight:600; color:var(--gold); border:1.5px solid rgba(212,160,23,0.4); background:rgba(212,160,23,0.06); transition:all 0.3s; }
+    .series-btn:hover { background:rgba(212,160,23,0.15); border-color:var(--gold); transform:translateY(-2px); }
   </style>
 </head>
 <body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">ॐ Sambhrama Katha</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="deepotsava.html">Deepotsava Tales</a>
+      <a href="banashankari.html">Banashankari</a>
+      <a href="ashtavinayak.html">Ashtavinayak</a>
+      <a href="festivals.html">Festivals</a>
+      <a href="epics.html">Epics</a>
+    </div>
+    <a href="https://www.youtube.com/@SambhramaKatha?sub_confirmation=1" target="_blank" rel="noopener" class="nav-subscribe">▶ Subscribe</a>
+  </nav>
 
   <!-- ══ HERO ══ -->
   <header class="hero">
@@ -596,6 +623,13 @@
         ▶ Subscribe on YouTube
       </a>
       <a href="#videos" class="btn btn-outline">Explore Stories</a>
+    </div>
+    <div class="series-browse" style="margin-top:1.5rem;">
+      <a href="deepotsava.html" class="series-btn">🪔 Deepotsava Tales</a>
+      <a href="banashankari.html" class="series-btn">🌺 Banashankari</a>
+      <a href="ashtavinayak.html" class="series-btn">🐘 Ashtavinayak Yatra</a>
+      <a href="festivals.html" class="series-btn">☀️ Festival Stories</a>
+      <a href="epics.html" class="series-btn">🏹 Epic Tales</a>
     </div>
     <div class="scroll-hint">
       <span>Scroll</span>
@@ -745,136 +779,6 @@
           <div class="video-tag">Deepotsava Tales · Ep 6</div>
           <div class="video-title">Govardhan Puja &amp; Bali Padyami — Krishna &amp; Vamana</div>
           <div class="video-meta">🪔 Diwali Special &nbsp;·&nbsp; 1:49</div>
-        </div>
-      </a>
-
-      <!-- Video 4 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=mKG6zdCcmmg" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/mKG6zdCcmmg/mqdefault.jpg" alt="Rama Returns to Ayodhya" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Deepotsava Tales · Ep 5</div>
-          <div class="video-title">RAMAYANA — Lord Rama Returns to Ayodhya</div>
-          <div class="video-meta">🏹 Ramayana &nbsp;·&nbsp; 1:30</div>
-        </div>
-      </a>
-
-      <!-- Video 5 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=RJQIikaJsCE" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/RJQIikaJsCE/mqdefault.jpg" alt="Lakshmi Puja" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Deepotsava Tales · Ep 4</div>
-          <div class="video-title">Goddess Lakshmi Puja on Amavasya — The Divine Night</div>
-          <div class="video-meta">🪔 Diwali Special &nbsp;·&nbsp; 1:52</div>
-        </div>
-      </a>
-
-      <!-- Video 6 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=9UIYza21hlM" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/9UIYza21hlM/mqdefault.jpg" alt="Naraka Chaturdashi" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Deepotsava Tales · Ep 3</div>
-          <div class="video-title">Why Do We Celebrate Naraka Chaturdashi? The Story of Narakasura</div>
-          <div class="video-meta">🪔 Diwali Special &nbsp;·&nbsp; 1:47</div>
-        </div>
-      </a>
-
-      <!-- Video 7 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=dSKMWylMteU" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/dSKMWylMteU/mqdefault.jpg" alt="Lord Dhanvantari" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Deepotsava Tales · Ep 2</div>
-          <div class="video-title">Lord Dhanvantari Story — The Divine Birth of Ayurveda</div>
-          <div class="video-meta">🪔 Dhanteras &nbsp;·&nbsp; 1:47</div>
-        </div>
-      </a>
-
-      <!-- Video 8 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=Eh9SKrdmu5I" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/Eh9SKrdmu5I/mqdefault.jpg" alt="Yama Deepam" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Deepotsava Tales · Ep 1</div>
-          <div class="video-title">Yama Deepam Story — How a Princess Saved the Prince from Yama</div>
-          <div class="video-meta">🪔 Diwali Special &nbsp;·&nbsp; 1:46</div>
-        </div>
-      </a>
-
-      <!-- Video 9 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=6ctbB_KV3Us" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/6ctbB_KV3Us/mqdefault.jpg" alt="Banashankari Temple Bengaluru" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Banashankari Series</div>
-          <div class="video-title">Banashankari Temple Bengaluru — History &amp; Lemon Diyas Pooja</div>
-          <div class="video-meta">🌺 Temple Tales &nbsp;·&nbsp; 1:20</div>
-        </div>
-      </a>
-
-      <!-- Video 10 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=Qus9z-Vk9TM" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/Qus9z-Vk9TM/mqdefault.jpg" alt="Banashankari Temple Badami" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Banashankari Series</div>
-          <div class="video-title">Banashankari Temple Badami — History, Jatre &amp; Traditions</div>
-          <div class="video-meta">🌺 Temple Tales &nbsp;·&nbsp; 1:32</div>
-        </div>
-      </a>
-
-      <!-- Video 11 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=KTyecu7lUs0" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/KTyecu7lUs0/mqdefault.jpg" alt="Banashankari Devi Story" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Banashankari Series</div>
-          <div class="video-title">Banashankari Devi Story — The Goddess Who Defeated Durgamasura</div>
-          <div class="video-meta">🌺 Goddess Story &nbsp;·&nbsp; 1:35</div>
-        </div>
-      </a>
-
-      <!-- Video 12 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=5-D-3f_Eys0" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/5-D-3f_Eys0/mqdefault.jpg" alt="Vijayadashami Dussehra" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Festival Story</div>
-          <div class="video-title">Why Is Vijayadashami Celebrated? The Story Behind Dussehra</div>
-          <div class="video-meta">🏹 Dussehra &nbsp;·&nbsp; 3:15</div>
-        </div>
-      </a>
-
-      <!-- Video 13 -->
-      <a class="video-card" href="https://www.youtube.com/watch?v=a8pJAmnMaAk" target="_blank" rel="noopener">
-        <div class="video-thumb">
-          <img src="https://img.youtube.com/vi/a8pJAmnMaAk/mqdefault.jpg" alt="Ashtavinayak Yatra" loading="lazy" />
-          <div class="play-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-        </div>
-        <div class="video-body">
-          <div class="video-tag">Ashtavinayak Yatra</div>
-          <div class="video-title">Ashtavinayak Darshan &amp; Yatra — 8 Ganpati Temples in Maharashtra</div>
-          <div class="video-meta">🐘 Pilgrimage &nbsp;·&nbsp; 3:39</div>
         </div>
       </a>
 
